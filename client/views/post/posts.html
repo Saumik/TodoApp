@@ -1,0 +1,15 @@
+<template name = 'postsList'>
+	{{> addPost}}
+  <div class="posts">
+
+  	Press the adjoining buttons to delete.
+
+    {{#each posts}}
+    {{name}} 
+    <br>
+    <button type="text" class="btn btn-default deletePost"> 
+    	<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+ 	</button> 
+    {{/each}}
+  </div>
+</template>
