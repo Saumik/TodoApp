@@ -9,7 +9,8 @@ posts: function() {
 Template.postsList.events({
 
 	'click button': function() {
-		Posts.remove(this._id);
+		var postId = this._id;
+		Meteor.call('removePost', postId);
 	}
 
 });

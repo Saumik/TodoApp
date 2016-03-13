@@ -18,4 +18,9 @@ ecmascript              # Enable ECMAScript2015+ syntax in app code
 
 iron:router
 bootstrap
-insecure
+mrt:bootstrap-3
+accounts-password
+accounts-ui-unstyled
+accounts-facebook
+service-configuration
+msavin:mongol
