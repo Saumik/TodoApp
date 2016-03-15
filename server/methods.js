@@ -1,7 +1,8 @@
 Meteor.methods({
-	'sendlog':function(addpost){
+	'sendlog':function(addpost, date){
 	 var currentUserId = Meteor.userId();
      Posts.insert({ name: addpost,
+     				date: date,
   					createdBy: currentUserId
   				 });
 	},

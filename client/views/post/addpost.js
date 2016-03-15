@@ -3,7 +3,8 @@ Template.addPost.events({
 'click .confirm': function(event){
 event.preventDefault();
 var addPost = tinyMCE.activeEditor.getContent();
-Meteor.call('sendlog', addPost);
+var date = moment().format('MMMM Do YYYY, h:mm a')
+Meteor.call('sendlog', addPost, date);
 }
 });
 
